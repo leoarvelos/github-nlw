@@ -7,7 +7,8 @@ const {
     pageLanding,
     pageStudy,
     pageGiveClasses,
-    saveClasses
+    saveClasses,
+    saveSucess
 } = require('./pages')
 
 //Configurar nunjucks
@@ -27,6 +28,7 @@ server
 .get("/", pageLanding)
 .get("/study", pageStudy)
 .get("/give-classes", pageGiveClasses)
+.get("/save-sucess", saveSucess)
 .post("/save-classes", saveClasses)
 //start do servidor
 .listen(5500)

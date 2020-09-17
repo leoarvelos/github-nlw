@@ -63,7 +63,7 @@ async function saveClasses (req, res) {
             whatsapp: req.body.whatsapp,
             bio: req.body.bio
         }
-    
+
 
     const classValue = {
         subject: req.body.subject,
@@ -98,9 +98,14 @@ async function saveClasses (req, res) {
       
 }
 
+function saveSucess (req, res) {
+    return res.render("save-sucess.html")
+}
+
 module.exports = {
     pageLanding,
     pageStudy,
     pageGiveClasses,
+    saveSucess,
     saveClasses
 }
