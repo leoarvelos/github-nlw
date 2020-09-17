@@ -64,7 +64,6 @@ async function saveClasses (req, res) {
             bio: req.body.bio
         }
 
- 
 
     const classValue = {
         subject: req.body.subject,
